@@ -6,12 +6,12 @@
   <form method="post">
       <label for="message"> Please enter any message you'd like(: </label>
       <br>
-      <input name="message" id="message">
+      <input type="text" name="message" id="message" required>
+      <br><br>
+      <label for="handle"> Username </label>
       <br>
-      <label for="name"> Username </label>
-      <br>
-      <input name="name" id="name">
-      <br>
+      <input type="text" name="handle" id="handle" required>
+      <br><br>
       <input type="submit" value="Submit form">
   </form>
   {% if name %}
