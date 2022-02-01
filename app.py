@@ -18,7 +18,7 @@ def main():
     return render_template("main_better.html")
 
 # getting basic user data
-@app.route('/ask/', methods=['POST', 'GET'])
+@app.route('/submit/', methods=['POST', 'GET'])
 def ask():
     if request.method == 'GET':
         return render_template('submit.html')
