@@ -24,9 +24,9 @@ def ask():
         return render_template('submit.html')
     else:
         try:
-            return render_template('ask.html', name=request.form['name'], student=request.form['student'])
+            return render_template('submit.html', name=request.form['name'], student=request.form['student'])
         except:
-            return render_template('ask.html')
+            return render_template('submit.html')
 
 # 
 @app.route('/profile/<name>/')
