@@ -1,17 +1,13 @@
 {% block header %}
-  <h1>{% block title %}Ask{% endblock %}</h1>
+  <h1>{% block title %}A simple, yet fun, submission bank{% endblock %}</h1>
 {% endblock %}
 
 {% block content %}
   <form method="post">
-      <label for="name">What would you like us to call you?</label>
+      <label for="message"> Please enter any message you'd like(: </label>
+      <input name="message" id="message">
+      <label for="name"> Username </label>
       <input name="name" id="name">
-      <br>
-      <label for="pic16b">Are you in PIC16B?</label>
-      <input type="radio" name="student" id="yes" value="yes">
-      <label for="yes">Yes</label>
-      <input type="radio" name="student" id="no" value="no">
-      <label for="No">No</label>
       <br>
       <input type="submit" value="Submit form">
   </form>
