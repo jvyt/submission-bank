@@ -117,7 +117,7 @@ def view():
 
     else:
         try:
-            rand = random_messages(int(request.form['message']))
+            rand = random_messages(int(request.form['num']))
             message = random_messages(rand)
             return(render_template('view.html', message))
         except: 
